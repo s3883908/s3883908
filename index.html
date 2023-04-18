@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Icon Design</title>
+    <style>
+        h1 {
+          font-size: 36px;
+          color: #fefdfd;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 50px;
+          .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+        }
+        
+      </style>
+    </head>
+    <body>
+      <h1>Street Cultures</h1>
+      <div class="image-container">
+        <img src="title background.png"height="80" width="2000">
+      </div>
+    </body>
+    
+    <body style="background-color: rgba(31, 30, 30, 0.692)"></body>
+    
+
+    <style>
+        .row {
+            margin-top: 40px;
+        }
+
+        .left-column {
+            float: left;
+            width: 30%;
+            margin-left: 30px;
+        }
+
+        .center-column {
+            width: 30%;
+            margin: auto;
+        }
+
+        .right-column {
+            float: right;
+            width: 30%;
+            margin-right: 30px;
+        }
+
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="left-column">
+            <div class="image-container">
+                <img src="Icon/rap.png" height="200" width="200" id="icon1" />
+                <img src="gif/rap.gif" height="200" width="200" id="gif1" style="display: none;" />
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="image-container">
+                <img src="Icon/Beatbox.png" height="200" width="200" id="icon3" />
+                <img src="gif/beatbox.gif" height="200" width="200" id="gif3" style="display: none;" />
+
+            </div>
+        </div>
+        <div class="center-column">
+            <div class="image-container">
+                <img src="Icon/DJ.png" height="200" width="200" id="icon2" />
+                <img src="gif/DJ.gif" height="250" width="260" id="gif2" style="display: none;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left-column">
+            <div class="image-container">
+                <img src="Icon/Graffiti copy.png" height="200" width="200" id="icon4" />
+                <img src="gif/graffiti.gif" height="200" width="200" id="gif4" style="display: none;" />
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="image-container">
+                <img src="Icon/handstyle.png" height="200" width="200" id="icon6" />
+                <img src="gif/handstyle.gif" height="200" width="200" id="gif6" style="display: none;" />
+            </div>
+        </div>
+        <div class="center-column">
+            <div class="image-container">
+                <img src="Icon/Skateboard.png" height="200" width="200" id="icon5" />
+                <img src="gif/skateboard.gif" height="200" width="200" id="gif5" style="display: none;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="left-column">
+            <div class="image-container">
+                <img src="Icon/Tattoo.png" height="200" width="200" id="icon7" />
+                <img src="gif/tattoo.gif" height="200" width="200" id="gif7" style="display: none;" />
+            </div>
+
+        </div>
+        <div class="right-column">
+            <div class="image-container">
+                <img src="Icon/basketball.png" height="200" width="200" id="icon9" />
+                <img src="gif/basketball.gif" height="200" width="200" id="gif9" style="display: none;" />
+            </div>
+        </div>
+        <div class="center-column">
+            <div class="image-container">
+                <img src="Icon/parkour.png" height="200" width="200" id="icon8" />
+                <img src="gif/parkour.gif" height="200" width="200" id="gif8" style="display: none;" />
+            </div>
+        </div>
+    </div>
+    <audio src="Audio/Graffiti.wav" id="sound4" preload="auto"></audio>
+    <script>
+
+        var icon4 = document.getElementById("icon4");
+        var gif4 = document.getElementById("gif4");
+        var sound4 = document.getElementById("sound4");
+        icon4.addEventListener("click", function () {
+            sound4.play();
+            icon4.style.display = 'none'
+            gif4.style.display = 'block'
+            var timer4 = setInterval(() => {
+                console.log(sound4.ended)
+                if (sound4.ended) {
+                    icon4.style.display = 'block'
+                    gif4.style.display = 'none'
+                    clearInterval(timer4)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/Hiphop.wav" id="sound1" preload="auto"></audio>
+    <script>
+
+        var icon1 = document.getElementById("icon1");
+        var gif1 = document.getElementById("gif1");
+        var sound1 = document.getElementById("sound1");
+        icon1.addEventListener("click", function () {
+            sound1.play();
+            icon1.style.display = 'none'
+            gif1.style.display = 'block'
+            var timer1 = setInterval(() => {
+                console.log(sound1.ended)
+                if (sound1.ended) {
+                    icon1.style.display = 'block'
+                    gif1.style.display = 'none'
+                    clearInterval(timer1)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/DJ.wav" id="sound2" preload="auto"></audio>
+    <script>
+
+        var icon2 = document.getElementById("icon2");
+        var gif2 = document.getElementById("gif2");
+        var sound2 = document.getElementById("sound2");
+        icon2.addEventListener("click", function () {
+            sound2.play();
+            icon2.style.display = 'none'
+            gif2.style.display = 'block'
+            var timer2 = setInterval(() => {
+                console.log(sound2.ended)
+                if (sound2.ended) {
+                    icon2.style.display = 'block'
+                    gif2.style.display = 'none'
+                    clearInterval(timer2)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/Beatbox.wav" id="sound3" preload="auto"></audio>
+    <script>
+
+        var icon3 = document.getElementById("icon3");
+        var gif3 = document.getElementById("gif3");
+        var sound3 = document.getElementById("sound3");
+        icon3.addEventListener("click", function () {
+            sound3.play();
+            icon3.style.display = 'none'
+            gif3.style.display = 'block'
+            var timer3 = setInterval(() => {
+                console.log(sound3.ended)
+                if (sound3.ended) {
+                    icon3.style.display = 'block'
+                    gif3.style.display = 'none'
+                    clearInterval(timer3)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/Skateboard.wav" id="sound5" preload="auto"></audio>
+    <script>
+
+        var icon5 = document.getElementById("icon5");
+        var sound5 = document.getElementById("sound5");
+        var gif5 = document.getElementById("gif5");
+        icon5.addEventListener("click", function () {
+            sound5.play();
+            icon5.style.display = 'none'
+            gif5.style.display = 'block'
+            var timer5 = setInterval(() => {
+                console.log(sound5.ended)
+                if (sound5.ended) {
+                    icon5.style.display = 'block'
+                    gif5.style.display = 'none'
+                    clearInterval(timer5)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/handstyle.wav" id="sound6" preload="auto"></audio>
+    <script>
+
+        var icon6 = document.getElementById("icon6");
+        var gif6 = document.getElementById("gif6");
+        var sound6 = document.getElementById("sound6");
+        icon6.addEventListener("click", function () {
+            sound6.play();
+            icon6.style.display = 'none'
+            gif6.style.display = 'block'
+            var timer6 = setInterval(() => {
+                console.log(sound6.ended)
+                if (sound6.ended) {
+                    icon6.style.display = 'block'
+                    gif6.style.display = 'none'
+                    clearInterval(timer6)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/tattoo.wav" id="sound7" preload="auto"></audio>
+    <script>
+
+        var icon7 = document.getElementById("icon7");
+        var gif7 = document.getElementById("gif7");
+        var sound7 = document.getElementById("sound7");
+        icon7.addEventListener("click", function () {
+            sound7.play();
+            icon7.style.display = 'none'
+            gif7.style.display = 'block'
+            var timer7 = setInterval(() => {
+                console.log(sound7.ended)
+                if (sound7.ended) {
+                    icon7.style.display = 'block'
+                    gif7.style.display = 'none'
+                    clearInterval(timer7)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/parkour.wav" id="sound8" preload="auto"></audio>
+    <script>
+
+        var icon8 = document.getElementById("icon8");
+        var gif8 = document.getElementById("gif8");
+        var sound8 = document.getElementById("sound8");
+        gif8.loop = true;
+        icon8.addEventListener("click", function () {
+            sound8.play();
+            icon8.style.display = 'none'
+            gif8.style.display = 'block'
+            var timer8 = setInterval(() => {
+                console.log(sound8.ended)
+                if (sound8.ended) {
+                    icon8.style.display = 'block'
+                    gif8.style.display = 'none'
+                    clearInterval(timer8)
+                }
+            }, 500)
+        });
+
+    </script>
+    <audio src="Audio/Basketball.wav" id="sound9" preload="auto"></audio>
+    <script>
+
+        var icon9 = document.getElementById("icon9");
+        var gif9 = document.getElementById("gif9");
+        var sound9 = document.getElementById("sound9");
+        icon9.addEventListener("click", function () {
+            sound9.play();
+            icon9.style.display = 'none'
+            gif9.style.display = 'block'
+            var timer9 = setInterval(() => {
+                console.log(sound9.ended)
+                if (sound9.ended) {
+                    icon9.style.display = 'block'
+                    gif9.style.display = 'none'
+                    clearInterval(timer9)
+                }
+            }, 500)
+        });
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
